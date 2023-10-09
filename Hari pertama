@@ -1,0 +1,15 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        
+        System.out.println("Muhammad Naufal. N");
+        System.out.println("Kelas:Informatika B 23");
+        System.out.println("Alamat:Majene");
+        
+        
+        
+    }
+    
+}
