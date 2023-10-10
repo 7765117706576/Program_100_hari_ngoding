@@ -1,0 +1,24 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        String Nama= "Muhammad Naufal. N";
+        String Kelas = "Kelas Informatika B 23";
+        String Alamat= "Majene";
+        int umur=18;
+        float berat_badan= 55.6f;
+        boolean Status_pernikahan = false;
+        
+        
+        System.out.println("Nama:"+Nama);
+        System.out.println("Kelas:"+Kelas);
+        System.out.println("Alamat:"+Alamat);
+        System.out.println("umur:"+umur);
+        System.out.println("Berat badan:"+berat_badan+"kg");
+        System.out.println("Status pernikahan:"+Status_pernikahan);
+        
+        
+    }
+    
+}
