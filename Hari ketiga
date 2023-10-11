@@ -1,0 +1,16 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        //pengoperasian aritmatika sederhana menggunakan angka bulat
+        
+        int angka1=5;
+        int angka2=7;
+        int angka3=9;
+        
+        System.out.println("hasil dari angka ke 1 + angka ke 2 ="+angka1+angka2);
+        System.out.println("hasil dari angka ke 1 × angka ke 2="+angka1*angka2);
+        System.out.println("nilai dari angka ke 3 × 3="+angka3*3);
+        System.out.println("hasil dari angka ke 1 + angka ke 3="+angka1+angka3);
+        
