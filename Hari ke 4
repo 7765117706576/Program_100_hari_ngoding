@@ -1,0 +1,16 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        //pengoperasian aritmatika dalam mencari luas dari kubus
+        // di ketahui lebar dari kubus =5,dan panjangnya=10 maka berapa luas kubus tsb???
+        int lebar=5;
+        int panjang=10;
+        int luas=panjang*lebar;
+        System.out.println("untuk mencari luas dari kubus tersebut kita kalikan panjang dan lebarnya,maka 10 × 5="+(luas));
+        
+        
+    }
+    
+}
