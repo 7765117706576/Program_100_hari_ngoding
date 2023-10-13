@@ -1,0 +1,28 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        //operator pembandingan
+        int a= 10;
+        int b= 9;
+        
+        /*perlu di ketahui bahwa di operator pembanding ada istilah pembandingan senilai,yaitu:
+        
+        ==  : Senilai,hasilnya akan "true" apabila nilai dari masing-masing variabel senilai,tapi ketika kedua nilai tidak senilai maka hasilnya akan "false"
+        !=  : Tidak senilai,"True" apabila kedua variabel tidak senilai,dan "false" apabila kedua variabel senilai
+        >   : lebih dari,"True" apabila variabel pertama lebih besar ketika di bandingkan dengan variabel kedua,"False" ketika variabel pertama lebih kecil dari variabel kedua
+        >=  : lebih dari atau sama dengan,"True" apabila variabel pertama nilainya lebih besar atau sama dengan nilai variabel kedua,"False" apabila nilai variabel pertama lebih kecil dari variabel kedua
+        <   : kurang dari,"True" apabila variabel pertama kurang dari nilai variabel kedua,"False" apabila nilai variabel pertama lebih besar dari variabel kedua
+        <=  : kurang dari atau sama dengan,"True" apabila nilai dari variabel pertama kurang atau senilai dengan variabel kedua,"false" apabila nilai variabel pertama lebih besar dari nilai variabel kedua
+        */
+        
+        System.out.println(a==b);
+        System.out.println(a!=b);
+        System.out.println(a>b);
+        System.out.println(a>=b);
+        System.out.println(a<b);
+        System.out.println(a<=b);
+    }
+    
+}
