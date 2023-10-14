@@ -1,0 +1,18 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        //membuat sistem operasi penjumlahan secara sistematis
+        int angka= 10;
+        angka*=3;
+        angka+=2;
+        angka/=2;
+        angka%=3;
+        
+        System.out.println(angka);
+        
+  
+    }
+    
+}
