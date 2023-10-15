@@ -1,0 +1,13 @@
+package koding;
+import java.util.Scanner;
+public class Naufal1 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String data;
+        data=input.nextLine();
+        System.out.print("data="+data);
+        
+    }
+    
+}
