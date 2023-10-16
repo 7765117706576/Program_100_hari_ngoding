@@ -1,0 +1,23 @@
+package koding;
+import java.util.Scanner;
+public class Naufal1 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String nama,kelas,nim,alamat;
+        System.out.print("Nama :");
+        nama=input.nextLine();
+        System.out.print("Kelas :");
+        kelas=input.nextLine();
+        System.out.print("Nim: ");
+        nim=input.nextLine();
+        System.out.print("Alamat: ");
+        alamat=input.nextLine();
+        
+        System.out.println("Nama :"+nama);
+        System.out.println("Kelas:"+kelas);
+        System.out.println("Nim:"+nim);
+        System.out.println("Alamat:"+alamat);
+    }
+    
+}
