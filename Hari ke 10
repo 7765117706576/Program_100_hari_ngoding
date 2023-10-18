@@ -1,0 +1,18 @@
+package koding;
+import java.util.Scanner;
+public class Naufal1 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int angka1,angka2;
+        System.out.print("Masukkan angka pertama :");
+        angka1=input.nextInt();
+        System.out.print("Masukkan angka kedua :");
+        angka2=input.nextInt();
+        int hasil=
+        angka1+angka2;
+        System.out.println("hasil dari angka pertama dan kedua ketika dijumlah adalah:"+hasil);
+        
+    }
+    
+}
