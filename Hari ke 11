@@ -1,0 +1,17 @@
+package koding;
+import java.util.Scanner;
+public class Naufal1 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String nama;
+        float tinggi_badan,berat_badan;
+        System.out.print("Masukkan Nama:");
+        nama=input.next();
+        System.out.print("Masukkan tinggi badan :");
+        tinggi_badan=input.nextFloat();
+        System.out.print("Masukkan berat badan:");
+        berat_badan=input.nextFloat();
+        System.out.println("Nama:"+nama);
+        System.out.println("Tinggi badan:"+tinggi_badan+"Cm");
+        System.out.println("Berat badan:"+berat_badan+"Kg");
