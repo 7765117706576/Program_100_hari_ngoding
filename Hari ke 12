@@ -1,0 +1,18 @@
+package koding;
+import java.util.Scanner;
+public class Naufal1 {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String soal="Carilah luas dari persegi apabila panjangnya=10 cm dan lebarnya= 5 cm!";
+        int panjang,lebar;
+        System.out.println(soal);
+        System.out.print("Masukkan ukuran panjang pada soal :");
+        panjang=input.nextInt();
+        System.out.print("Masukkan ukuran lebar pada soal :");
+        lebar=input.nextInt();
+        int hasil= panjang*lebar;
+        System.out.println("Maka luasnya adalah "+hasil+"cm");
+    }
+    
+}
