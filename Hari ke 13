@@ -1,0 +1,17 @@
+package belajar;
+
+public class Main {
+    
+    public static void main(String[] args) {
+      //Membuat operasi ternary secara sederhana  
+        
+        
+       int
+        angka=10;
+        int hasil=angka%=2;
+        String kondisi= hasil==0?"Genap":"Ganjil";
+        System.out.println(kondisi);
+        
+    }
+    
+}
