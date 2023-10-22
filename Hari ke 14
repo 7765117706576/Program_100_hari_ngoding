@@ -1,0 +1,50 @@
+package ngoding ;
+
+public class hari {
+    
+    public static void main(String[] args) {
+        /*membuat operasi logika
+        ada tiga jenis operasi logika yaitu:
+        NOT (tidak) memiliki simbol = !
+        AND (dan)   memiliki simbol = &&
+        OR  (atau)  memiliki simbol = ||
+        */
+        System.out.println("Pertama penggunaan NOT sebagai simbol !");
+        //pertama kita menggunakan NOT sebagai simbol "!"
+        boolean lulus= true;
+        boolean hasil=lulus;
+        System.out.println("lulus: "+lulus);
+        System.out.println("!lulus: "+!lulus);
+        System.out.println("hasil: "+hasil);
+        System.out.println("!hasil: "+!hasil);
+        /* kedua sistem perintah diatas sama-sama memiliki satu jenis variabel yang akan ditentukan outputnya,namun sistem perintah yang menggunakan awalan "!" akan memutar balik dari hasil sebelummya,apabila nilainya true maka akan di balik jadi false
+        */
+  
+        System.out.println("Selanjutnya penggunaan AND sebagai simbol &&");
+        
+        //Kedua kita akan menggunakan AND sebagai simbolnya "&&"
+        boolean a=true;
+        boolean b=false;
+        boolean c= a && b;
+        System.out.println("a:"+a);
+        System.out.println("b:"+b);
+        System.out.println(a&&b);
+        System.out.println(c);
+        
+        /*pada operasi AND keduanya harus true untuk menghasilkan true,apabila kedua variabel diperintah dan memiliki salah satu outputnya false,maka akan otomatis false,logikanya pada logika AND setiap variabel akan di kalikan,true adalah 1 dan false adalah 0
+        */
+        System.out.println("Selanjutnya penggunaan logika OR dengan simbol ||");
+        /*kita memakai variabel dan type data logika AND saja,karna OR adalah kebalikan dari AND
+        */
+        boolean D = a||b;
+        
+        System.out.println("a: "+a);
+        System.out.println("b: "+b);
+        System.out.println(a||b);
+        System.out.println(D);
+        
+        //Pada logika OR hanya meminta salah satu kondisi true dalam setiap variabel untuk menghasilkan true,untuk menghasilkan false maka setiap output variabel yang di input harus false,logikanya pada logika ini setiap variabel akan di jumlahkan,true sebagai 1 dan false sebagai 0 jadi kalau ingin menghasilkan false maka setiap variabel yang di input harus nol
+        
+    }
+    
+}
