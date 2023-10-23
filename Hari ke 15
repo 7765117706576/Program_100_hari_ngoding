@@ -1,0 +1,13 @@
+package koding;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        String nama="Naufal";
+        if (nama.equals("Naufal")){
+            System.out.println("jenis kelamin:laki-laki");
+        }  
+        
+    }
+    
+}
