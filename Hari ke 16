@@ -1,0 +1,26 @@
+package koding;
+
+public class Main {
+    
+    public static void main(String[] args) {
+//Hari ini kita akan membuat kodingan dengan menggunakan percabangan if dan else pada pembuatan biodata seseorang
+
+        String nama="Naufal";
+        String kelas="Informatika B";
+        String alamat="Passarang";
+        String jenis_kelamin="Laki-laki";
+        Boolean punya_pacar=false;
+        
+            System.out.println("Nama:"+" "+nama);
+            System.out.println("Kelas:"+" "+kelas);
+            System.out.println("Alamat:"+" "+alamat);
+            System.out.println("Jenis kelamin:"+" "+jenis_kelamin);
+        
+        if (punya_pacar.equals(false)){
+            System.out.println("nda ada kita pacar ta,bdw adakah seratus");
+            
+        } else System.out.println("nda jomblo ma");
+        
+    }
+    
+}
