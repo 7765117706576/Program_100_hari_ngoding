@@ -1,0 +1,17 @@
+package perbandingan;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        int a = 8;
+        int b = 7;
+        if(a>b){
+            System.out.println("maka nilai b lebih besar dari a");
+        }
+    else if(a>=b)
+    System.out.println("maka a dan b nilainya sama atau a lebih besar dari b");
+        else System.out.println("nda memenuhi syarat i kondisinya bosku");
+        
+    }
+    
+}
