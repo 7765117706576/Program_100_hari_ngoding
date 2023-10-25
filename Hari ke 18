@@ -1,0 +1,22 @@
+package mabar;
+
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+       Scanner input= new Scanner(System.in);
+        int angka,angka2;
+        System.out.print("Masukan angka pertama: ");
+        angka=input.nextInt();
+        System.out.print("Masukkan angka kedua: ");
+        angka2=input.nextInt();
+        if(angka>angka2){
+            System.out.println("maka nilai angka pertama lebih besar dari angka kedua");
+        }
+    else if(angka>=angka2)
+    System.out.println("maka angka pertama dan angka kedua nilainya sama atau angka pertama lebih besar dari angka kedua");
+        else System.out.println("brarti lebih tinggi nilainya angka kedua daripada angka pertama bosku");
+        
+    }
+    
+}
