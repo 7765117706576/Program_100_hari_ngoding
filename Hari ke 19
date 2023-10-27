@@ -1,0 +1,26 @@
+package daftar_nilai;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+     Scanner input=new Scanner(System.in);
+     int Nilai;
+     System.out.print("Masukkan Nilai:");
+     Nilai=input.nextInt();
+     System.out.println("=====================");
+        
+     if (Nilai>=90 && Nilai<=100){
+         System.out.println("Nilai: A");
+     }else if(Nilai>=80 && Nilai<90){
+         System.out.println("Nilai : B");
+    }else if(Nilai>=60 && Nilai<80){
+        System.out.println("Nilai : C");
+    }else if(Nilai>=50 && Nilai<60){
+        System.out.println("Nilai : D");
+    }else if(Nilai>100){
+        System.out.println("Nilainya diluar nurul cuyy,mana ada nilai begitu");
+    }
+        else System.out.println("Erorr,belajarnya akademiknya di tingkatkan,jangan cuma belajar bertahan untuk dia yang terus menerus menyakitimu");
+}
+
+}
