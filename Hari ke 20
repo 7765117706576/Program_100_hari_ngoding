@@ -1,0 +1,20 @@
+package konversi_type_data;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input= new Scanner(System.in);
+        String biner;
+        System.out.print("Masukkan angka biner: ");
+        biner=input.nextLine();
+        int desimal = Integer.parseInt(biner, 5); // Mengonversi string biner ke desimal menggunakan basis 5
+
+        System.out.println("Hasil konversi nilai : " + desimal);
+
+        
+        
+        
+        
+    }
+    
+}
