@@ -1,0 +1,51 @@
+package menu_;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        String menu_makanan=null,menu_minuman=null;
+        int harga_minuman=0,harga_makanan=0,pilihan_makanan,pilihan_minuman,porsi_makanan,porsi_minuman,harga_total;
+        System.out.println("-----Menu-----");
+        System.out.println("1. Bakso\t\tRp. 10k\n2. Mie Ayam\t\tRp. 12k\n3. Ayam geprek\t\tRp. 13k\n-----Minuman-----\n1. Es teh\t\tRp. 5k\n2. Es jeruk\t\tRp. 7k\n3. Jus Alpukat\t\tRp. 10k");
+        System.out.println("===========================");
+        System.out.print("Pilihan Makanan\t:");
+        pilihan_makanan=input.nextInt();
+        System.out.print("Pilihan minuman\t:");
+        pilihan_minuman=input.nextInt();
+        System.out.print("Porsi makanan \t:");
+        porsi_makanan=input.nextInt();
+        System.out.print("Porsi Minuman \t:");
+        porsi_minuman=input.nextInt();
+        if(pilihan_makanan==1){
+            menu_makanan="Bakso";
+            harga_makanan=10000;
+            
+        }else if(pilihan_makanan==2){
+            menu_makanan="Mie Ayam";
+            harga_makanan=12000;
+        }else  if(pilihan_makanan==3){
+            menu_makanan="Ayam geprek";
+            harga_makanan=13000;
+        }if (pilihan_minuman==1){
+            menu_minuman="Es teh";
+            harga_minuman=5000;
+        }else if(pilihan_minuman==2){
+            menu_minuman="Es jeruk";
+            harga_minuman=7000;
+        }else if(pilihan_minuman==3){
+            menu_minuman="Jus Alpukat";
+            harga_minuman=10000;
+    }   if(pilihan_minuman>3||pilihan_makanan>3){
+        System.out.println("Pilihan Tidak tersedia");
+    }   else{
+        System.out.println("===========================");
+        System.out.println("Pesanan \t:"+menu_makanan+"/"+menu_minuman+"\nPorsi Makanan \t:"+porsi_makanan+"\nPorsi Minuman \t:"+porsi_minuman+"\nHarga \t\t:"+menu_makanan+" Rp "+harga_makanan+"/porsi"+"\n"+"\t\t "+menu_minuman+" Rp "+harga_minuman+"/gelas");
+        harga_total=(harga_makanan*porsi_makanan)+(harga_minuman*porsi_minuman);
+        System.out.println("Total pesanan \t:"+"Rp "+harga_total+" silahkan di bayar terima kasih");
+    }
+        
+    }
+    
+    
+}
