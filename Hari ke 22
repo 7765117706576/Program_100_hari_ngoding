@@ -1,0 +1,26 @@
+package Switch_case_satu;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        System.out.print("Masukkan pilihan,angka 1 atau 2:");
+        int pilihan =input.nextInt();
+        switch(pilihan){
+            case 1:
+            System.out.println("Uang 1M");
+            break;
+            case 2:
+            System.out.println("Menikah dengan cewe impian mu");
+            break;
+            default:
+            System.out.println("Pilihan nda tersedia");
+            
+            //switch case secara sederhana 
+        }
+        
+    }
+    
+
+        
+    }
+    
