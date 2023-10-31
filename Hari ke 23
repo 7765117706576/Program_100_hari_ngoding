@@ -1,0 +1,195 @@
+package Switch_case_satu;
+import java.util.Scanner;
+public class Main {
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+       String menu_makanan=null;
+        String menu_minuman=null; 
+       int harga_makanan=0,harga_minuman=0,porsi_makanan=0,porsi_minuman=0,harga_total=0; 
+        System.out.println("-----MENU-----\n1. Nasi Goreng\n2. Nasi Ayam\n3. Mie Kuah\n-----MINUMAN-----\n1. Teh\n2. Jus\n3. Kopi");
+        System.out.print("===============\nMasukkan Pilihan Makanan:");
+        int pilihan_makanan =input.nextInt();
+        System.out.print("Masukkan Pilihan Minuman :");
+        int pilihan_minuman=input.nextInt();
+        System.out.println("===============");
+        switch(pilihan_makanan){
+            case 1:
+            System.out.println("1. Nasi Goreng Original\t\tRp. 10k\n2. Nasi Goreng Spesial\t\tRp. 12k\n3. Nasi Goreng Jakarta\t\tRp. 15k");
+            System.out.print("Pilihan \t:");
+            pilihan_makanan=input.nextInt();
+            switch (pilihan_makanan){
+                case 1:
+                menu_makanan="Nasi Goreng Original";
+                System.out.print("Masukkan porsi  :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=10000;
+                break;
+                case 2:
+                menu_makanan="Nasi Goreng Spesial";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=12000;
+                break;
+                case 3:
+                menu_makanan="Nasi Goreng jakarta";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=15000;
+                default:
+                System.out.println("Pesanan tidak tersedia");
+               }
+            
+       break;
+       case 2:
+       System.out.println("1.Nasi Ayam Kecap\t\tRp. 10k\n2.Nasi Ayam Geprek\t\tRp. 12k\n3.Nasi Ayam Lalapan\t\tRp. 15k");
+       System.out.print("Masukkan Pilihan\t :");
+       pilihan_makanan=input.nextInt();
+            switch(pilihan_makanan){
+                case 1:
+                menu_makanan="Nasi Ayam Kecap";
+                System.out.print("Masukkan porsi \t\t:");
+                porsi_makanan=input.nextInt();
+                harga_makanan=10000;
+                break;
+                case 2:
+                menu_makanan="Nasi Ayam Geprek";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=12000;
+                break;
+                case 3:
+                menu_makanan="Nasi Ayam Lalapan";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=15000;
+                default:
+                System.out.println("Pesanan tidak tersedia");
+          }
+            
+       break;
+       case 3:
+       System.out.println("1.Mie Bakso\t\t\tRp. 10k\n2.Mie Bakso Mercon\t\tRp. 12k\n3.Mie Bakso Beranak\t\tRp. 15k");
+       System.out.print("Masukkan pilihan :");
+       pilihan_makanan=input.nextInt();
+            switch(pilihan_makanan){
+                case 1:
+                menu_makanan="Mie Bakso";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=10000;
+                break;
+                case 2:
+                menu_makanan="Mie Bakso Mercon";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=12000;
+                break;
+                case 3:
+                menu_makanan="Mie Bakso Beranak";
+                System.out.print("Masukkan porsi :");
+                porsi_makanan=input.nextInt();
+                harga_makanan=15000;
+                default:
+                System.out.println("Pesanan tidak tersedia");
+            }
+            
+        }
+        System.out.println("=================================");
+       switch (pilihan_minuman){
+       case 1:
+       System.out.println("1.Es Teh manis\n2.Teh hangat manis\n3.Teh hangat tawar\nAll Rp. 5k");    
+       System.out.print("Masukkan pilihan :");
+       pilihan_minuman=input.nextInt();
+           switch(pilihan_minuman){
+                 case 1:
+                 menu_minuman="Es Teh Manis";
+                 System.out.print("Masukkan Porsi :");
+                 porsi_minuman=input.nextInt();
+                 harga_minuman=5000;
+                 break;
+                 case 2:
+                 menu_minuman="Teh Hangat Manis";
+                 System.out.print("Masukkan Porsi :");
+                 porsi_minuman=input.nextInt();
+                 harga_minuman=5000;
+                 break;
+                 case 3:
+                 menu_minuman="Teh Hangat tawar";
+                 System.out.print("Masukkan Porsi :");
+                 porsi_minuman=input.nextInt();
+                 harga_minuman=5000;
+                 break;
+                default :
+                System.out.println("Pesanan tidak tersedia");
+               
+           }
+       break;      
+       case 2:
+       System.out.println("1.Jus Alpukat\t\t\tRp. 5k\n2.Jus Jeruk\t\t\tRp. 7k\n3.Jus Wortel Spesial\t\tRp. 10k");   
+       System.out.print("Masukkan pilihan: ");
+       pilihan_minuman=input.nextInt();
+            switch(pilihan_minuman){
+                case 1:
+                menu_minuman="Jus Alpukat";
+                System.out.print("Masukkan Porsi :");
+                porsi_minuman=input.nextInt();
+                harga_minuman=5000;
+                break;
+                case 2:
+                menu_minuman="Jus Jeruk";
+                System.out.print("Masukkan Porsi :");
+                porsi_minuman=input.nextInt();
+                harga_minuman=7000;
+                break;
+                case 3:
+                menu_minuman="Jus Wortel Spesial";
+                System.out.print("Masukkan Porsi :");
+                porsi_minuman=input.nextInt();
+                harga_minuman=10000;
+                break;
+                default :
+                System.out.println("Pesanan tidak tersedia");
+            }
+         break;  
+       case 3 :
+       System.out.println("1. Kopi Pahit Hangat\n2. Kopi Manis Hangat\nAll Rp. 5k");
+       System.out.print("Masukkan pilihan: ");
+       pilihan_minuman=input.nextInt();
+           switch(pilihan_minuman){
+               case 1:
+               menu_minuman="Kopi Pahit Hangat";
+               System.out.print("Masukkan Porsi :");
+               porsi_minuman=input.nextInt();
+               harga_minuman=5000;
+               break;
+               case 2:
+               menu_minuman="Kopi manis hangat";
+               System.out.print("Masukkan Porsi :");
+               porsi_minuman=input.nextInt();
+               harga_minuman=5000;
+              break; 
+              default:
+               System.out.println("Pesanan tidak tersedia");
+               
+               
+               
+               
+           }
+           
+           
+           
+           
+           
+           break;
+        }
+          System.out.println("=========================\nPesanan\t\t: "+menu_makanan+"/"+menu_minuman+"\nPorsi Makanan\t:"+porsi_makanan+"\nPorsi Minuman\t:"+porsi_minuman+"\nHarga\t\t:"+menu_makanan+"  \n\t\t Rp. "+harga_makanan+"/Porsi\n\t\t:"+menu_minuman+"Rp. "+harga_minuman+"/Gelas");      
+
+          harga_total=(harga_minuman*porsi_minuman)+(harga_makanan*porsi_makanan);
+        System.out.println("Total Pesanan\t:"+"Rp. "+harga_total+" Silahkan di bayar terima kasih");
+        
+        
+    }
+           
+        
+    }
+    
