@@ -1,0 +1,21 @@
+package looping_for1;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int angka_awal,angka_akhir;
+        System.out.print("Masukkan angka awal:");
+        angka_awal=input.nextInt();
+        System.out.print("Masukkan angka akhir:");
+        angka_akhir=input.nextInt();
+        for(int a = angka_awal; a <= angka_akhir; a++){
+            System.out.println("angka : "+a+" ");
+            
+        }
+        
+        
+        
+    }
+    
+}
