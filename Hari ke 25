@@ -1,0 +1,30 @@
+package looping_for_ganjil;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner (System.in);
+        int awal, akhir;
+        System.out.println("Bilangan Genap");
+        System.out.print("Angka awal  : ");
+        awal = input.nextInt();
+        System.out.print("Angka akhir : ");
+        akhir = input.nextInt();
+        System.out.print("Bilangan ganjil nya adalah : ");
+        if(awal < akhir){
+            for (int a = awal; a < akhir; a++) {
+                int hasil = a % 2;
+                if(hasil==1){
+                    System.out.print(a+" ");
+                }
+            }
+        }else{
+            System.out.println("angka awal harus lebih kecil dari angka akhir");
+        }
+        
+        
+     //sekian dari saya dikarenakan ada pemadaman listrik maka kodingan saya hanya seadanya,dan batreai juga kurang mendukung,lowbat:)   
+        
+    }
+    
+}
