@@ -1,0 +1,24 @@
+package looping_while;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input=new Scanner(System.in);
+        int awal,akhir;
+        System.out.print("Masukkan Bilangan awal: ");
+        awal=input.nextInt();
+        System.out.print("Masukkan Bilangan akhir: ");
+        akhir=input.nextInt();
+        if(awal<akhir){
+            System.out.println("angka awal harus besar i dari angka akhir bang");
+        }else
+         System.out.println("Output angka:");   
+        while(awal>=akhir){
+            System.out.print(+awal+" ");   
+         awal--;
+            
+        }
+        
+    }
+    
+}
