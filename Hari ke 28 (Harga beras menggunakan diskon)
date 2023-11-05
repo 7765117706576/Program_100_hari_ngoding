@@ -1,0 +1,34 @@
+package task_day28;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String garis="====================";
+        int harga=500000;
+        int jumlah,diskon=0,total,harga_total=0,diskon_total=0;
+        System.out.println("======SELAMAT DATANG DI TOKO SIPAKAIYA======\nHARI INI ADA PROMO BESAR-BESARAN PADA PENJUALAN BERAS SUPREME,DI IMPORT LANGSUNG DARI JEPANG DI JAMIN SEKALI SUAP LANGSUNG TERBANG MENUJU ISEKAI.\n\n- Membeli 150 karung beras atau lebih akan mendapatkan diskon sebesar 3%.\n\n- Membeli 300 karung beras atau lebih akan mendapatkan diskon sebesar 7%.\n\nMURAH SANGAT KANNN,KHUSUS HARI INI SILAHKAN DI BORONG PROMONYA!!!!!!!(EMOT API).");
+        System.out.println(garis+garis);
+        System.out.print("Masukkan jumlah yang anda ingin beli: "); 
+        jumlah=sc.nextInt();
+        System.out.println(garis+garis);
+        if(jumlah>=150){
+          harga_total=harga*jumlah;
+          diskon= 3 * (harga*jumlah)/100;
+          System.out.println("Anda mendapatkan diskon sebesar 3%, Rp. "+diskon+" - Rp. "+harga_total);
+          diskon_total=harga_total-=diskon;  
+        }else if(jumlah>=300){
+          harga_total=harga*jumlah;
+          diskon= 7 * (harga*jumlah)/100;
+          System.out.println("Anda mendapatkan diskon sebesar 7%, Rp. "+diskon+" - Rp. "+harga_total);
+          diskon_total=harga_total-=diskon;
+        }else{
+          System.out.println("Anda tidak mendapatkan diskon");
+          harga_total=harga*=jumlah;
+          diskon_total=harga_total-=diskon;  
+        }
+        System.out.println(garis+garis);
+        System.out.println("Total harga :Rp. "+diskon_total+" Silahkan di bayar,Arigatou gozaimasu");
+    }
+    
+}
