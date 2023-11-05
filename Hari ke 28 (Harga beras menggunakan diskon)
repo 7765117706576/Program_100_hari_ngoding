@@ -12,15 +12,15 @@ public class Main {
         System.out.print("Masukkan jumlah yang anda ingin beli: "); 
         jumlah=sc.nextInt();
         System.out.println(garis+garis);
-        if(jumlah>=150){
-          harga_total=harga*jumlah;
-          diskon= 3 * (harga*jumlah)/100;
-          System.out.println("Anda mendapatkan diskon sebesar 3%, Rp. "+diskon+" - Rp. "+harga_total);
-          diskon_total=harga_total-=diskon;  
-        }else if(jumlah>=300){
+        if(jumlah>=300){
           harga_total=harga*jumlah;
           diskon= 7 * (harga*jumlah)/100;
           System.out.println("Anda mendapatkan diskon sebesar 7%, Rp. "+diskon+" - Rp. "+harga_total);
+          diskon_total=harga_total-=diskon;  
+        }else if(jumlah>=150){
+          harga_total=harga*jumlah;
+          diskon= 3 * (harga*jumlah)/100;
+          System.out.println("Anda mendapatkan diskon sebesar 3%, Rp. "+diskon+" - Rp. "+harga_total);
           diskon_total=harga_total-=diskon;
         }else{
           System.out.println("Anda tidak mendapatkan diskon");
@@ -28,7 +28,7 @@ public class Main {
           diskon_total=harga_total-=diskon;  
         }
         System.out.println(garis+garis);
-        System.out.println("Total harga :Rp. "+diskon_total+" Silahkan di bayar,Arigatou gozaimasu");
+        System.out.println("Harga yang harus anda bayar adalah :Rp. "+diskon_total+" Silahkan di bayar,Arigatou gozaimasu");
     }
     
 }
