@@ -1,0 +1,26 @@
+package do_while;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int awal,akhir;
+        System.out.print("Masukkan nilai awal: ");
+        awal=sc.nextInt();
+        System.out.print("Masukkan nilai akhir: ");
+        akhir=sc.nextInt();
+        int a= awal;
+        System.out.println("Hasil dari inputan nilai adalah: ");
+        do {
+            System.out.println(a+" ");
+            a++;
+            
+        }while(a<=akhir);
+        
+        
+        
+        
+    }
+    
+    
+}
