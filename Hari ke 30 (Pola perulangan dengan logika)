@@ -1,0 +1,21 @@
+package pola_perulangan;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+    Scanner input=new Scanner(System.in);
+    int angka;
+    System.out.print("Masukkan angka: ");      
+    angka=input.nextInt();
+        for(int i=1; i <= angka; i++){
+            for(int y=1; y< angka; y++){
+                System.out.print("o ");
+            }
+            
+            System.out.println("o ");
+            
+        }
+        
+    }
+    
+}
