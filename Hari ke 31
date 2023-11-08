@@ -1,0 +1,21 @@
+package bilangan_berpangkat;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int angka,hasil,pangkat;
+        System.out.print("Masukkan angka yang ingin di pangkatkan : ");
+        angka=sc.nextInt();
+        System.out.print("Masukkan nilai pangkat : ");
+        pangkat=sc.nextInt();
+        hasil=angka;
+        System.out.println("Hasil     :");
+        for(int i=1; i< pangkat; i++){
+            hasil*=angka;
+        }
+            System.out.println(hasil);
+        
+    }
+    
+}
