@@ -1,0 +1,28 @@
+package faktorial;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner input = new Scanner(System.in);
+        int angka,hasil;
+        System.out.print("Masukkan angka: ");
+        angka=input.nextInt();
+        hasil= angka;
+        System.out.println(angka +"! :");
+        for(int i=angka; i>0; i--){
+            System.out.print(i);
+            if(i>1){
+                System.out.print("×");
+            }
+            if(angka != i){
+                hasil*=i;
+            }
+            
+          
+        }
+        
+        System.out.println("Hasilnya adalah: "+hasil);
+    }
+    
+    
+}
