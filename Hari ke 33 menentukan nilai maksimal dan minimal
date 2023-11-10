@@ -1,0 +1,28 @@
+package maks_dan_min;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+       Scanner input=new Scanner(System.in);
+        int bilangan,jumlah,maksimal=0,minimal=100;
+        System.out.print("Masukkan jumlah angka yang di input: ");
+        jumlah=input.nextInt();
+        System.out.println("--------------------------");
+        for(int i=1; i<=jumlah ;i++){
+            System.out.print("angka ke "+i+"= ");
+            bilangan=input.nextInt();
+            if(bilangan>maksimal){
+                maksimal=bilangan;
+                
+            }
+            if(bilangan<minimal){
+                minimal=bilangan;
+            }
+            
+        }
+        System.out.println("--------------------");
+        System.out.println("Angka maksimalnya: "+maksimal);
+        System.out.println("Angka minimalnya: "+minimal);
+    }
+    
+}
