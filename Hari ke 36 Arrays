@@ -1,0 +1,21 @@
+package array1;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int angka [] = new int [3];
+        System.out.print("Masukkan value indeks pertama =");
+        angka[0] = sc.nextInt();
+        System.out.print("Masukkan value indeks kedua =");
+        angka[1] = sc.nextInt();
+        System.out.print("Masukkan value indeks ketiga =");
+        angka[2] = sc.nextInt();
+        System.out.println("angka[0] ="+angka[0]);
+        System.out.println("angka[1] ="+angka[1]);
+        System.out.println("angka[2] ="+angka[2]);
+        
+        
+    }
+    
+}
