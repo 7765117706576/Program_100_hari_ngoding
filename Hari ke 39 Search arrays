@@ -1,0 +1,30 @@
+package array_3;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+       int a []={2,7,9,5,6,3};
+        int indeks,count=0;
+        System.out.print("deretan indeks: ");
+        for(int i=0; i<a.length; i++){
+            System.out.print(a[i]+" ");
+        }
+        System.out.println("");
+        System.out.println("Masukkan indeks yang ingin di cari:");
+        indeks=sc.nextInt();
+        for(int i=0; i<a.length;i++){
+            if(indeks==a[i]){
+                System.out.println("indeksnya adalah: "+i);
+                count++;
+            }
+            
+        }
+            if(count==0){
+                System.out.println("Indeks tidak ada");
+            }
+        
+    }
+    
+    
+}
