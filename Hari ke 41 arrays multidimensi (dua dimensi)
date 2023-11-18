@@ -1,0 +1,23 @@
+package multidimensi_1;
+
+public class Main {
+    
+    public static void main(String[] args) {
+        
+        String a[][]={{"ayam","sapi","ikan"},
+        {"apel","anggur","alpukat"}};
+        System.out.println("Nama hewan: ");
+        System.out.println(a[0][0]);
+        System.out.println(a[0][1]);
+        System.out.println(a[0][2]);
+        System.out.println("==============\nNama buah: ");
+        System.out.println(a [1][0]);
+        System.out.println(a [1][1]);
+        System.out.println(a [1][2]);
+        
+        
+        
+        
+    }
+    
+}
