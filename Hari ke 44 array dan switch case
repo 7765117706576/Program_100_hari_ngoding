@@ -1,0 +1,36 @@
+package array__6;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String bio[][]={
+            {"Al khawarizmi","780-850","Adalah Matematika Aljabar,Algoritma"},
+            {"Thomas alva edison"," 1847-1931",",Adalah lampu pijar"},
+            {"Albert einstein"," 1879-1955",",Adalah Teori Relativitas"},
+            
+        };
+        System.out.println("1. Alkhawarizmi\n2. Thomas alva edison\n3. Albert einstein");
+        System.out.print("Masukkan nomor tokoh yang ingin anda ketahui temuannya : ");
+       int pilihan=sc.nextInt();
+        System.out.println("-----------------------");
+        switch(pilihan){
+            case 1:
+            System.out.print("Tokohnya "+bio[0][0]+",Lahir pada \n"+bio[0][1]+" hasil temuannya "+bio[0][2]);
+            break;
+            case 2:
+            System.out.print("Tokohnya "+bio[1][0]+",Lahir pada \n"+bio[1][1]+" hasil temuannya "+bio[1][2]);
+            break;
+            case 3:
+            System.out.print("Tokohnya "+bio[2][0]+",Lahir pada \n"+bio[2][1]+" hasil temuannya "+bio[2][2]);
+            break;
+            default:
+            System.out.println("Data tidak tersedia");
+            
+        }  
+
+        
+        
+    }
+    
+}
