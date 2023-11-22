@@ -1,0 +1,28 @@
+package fungsi_dan_prosedur;
+
+public class Main {
+    
+    //prosedur
+    public static void hewan(){
+        String nama="Ayam";
+        String ilmiah="Gallus-gallus domesticus";
+        String famili="phasianidae";
+        System.out.println(nama+" \nNama ilimiahnya : "+ilmiah+" \nFamili \t\t: "+famili);
+    }
+    //fungsi
+    public static String bunga(){
+        String nama="Mawar";
+        String ilmiah="Rosa";
+        String famili="Rosaceae";
+        return nama+" \nNama ilimiahnya : "+ilmiah+" \nFamili \t\t: "+famili;
+    }
+    public static void main(String[] args) {
+       hewan(); 
+       System.out.println("----------");
+       System.out.println(bunga());
+        
+        
+        
+    }
+    
+}
