@@ -1,0 +1,30 @@
+package aritmatika;
+import java.util.Scanner;
+public class Main {
+
+   public static void operator(int a,int b){
+   int c;
+   double cbagi;
+   c=a+b;
+   System.out.println(a+" + "+b+" = "+c);
+   c=a-b;
+   System.out.println(a+" - "+b+" = "+c);
+   c=a*b;
+   System.out.println(a+" × "+b+" = "+c);
+   cbagi= (double) a/b;    
+   System.out.println(a+" : "+b+" = "+cbagi);
+   }
+    public static void main(String[] args) {
+    Scanner sc=new Scanner(System.in);
+    int a,b;
+    System.out.print("Masukkan Nilai Variabel a : ");
+    a=sc.nextInt();
+    System.out.print("Masukkan Nilai Variabel b : ");
+    b=sc.nextInt();
+    System.out.println("Output :");
+    operator(a,b);
+        
+        
+    }
+    
+}
