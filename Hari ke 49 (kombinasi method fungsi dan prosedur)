@@ -1,0 +1,41 @@
+package kombinasi;
+import java.util.Scanner;
+public class Main { 
+//method fungsi
+public static int luaspersegi(int s){
+      int l= s*s; 
+       return (l);       
+   }  
+
+public static int kelilingpersegi(int s){
+       int k=4*s;
+       return (k);       
+   }  
+//method prosedur
+public static void outputluas(int s){
+      System.out.println("Luas : ");
+      System.out.println("L = s × s");
+      System.out.println("L = "+s+" × "+s);
+      System.out.println("L = "+luaspersegi(s)); 
+   } 
+
+public static void outputkeliling(int s){
+      System.out.println("Keliling : ");
+      System.out.println("K = 4 × s");
+      System.out.println("K = 4"+" × "+" s");
+      System.out.println("K = "+kelilingpersegi(s));
+       
+   }
+    
+    public static void main(String[] args) {
+       Scanner sc=new Scanner(System.in);
+       System.out.print("Masukkan sisi persegi : ");
+       int s=sc.nextInt();
+       System.out.println("========================");
+       outputluas(s);
+       System.out.println("========================");
+       outputkeliling(s);  
+        
+    }
+    
+}
