@@ -1,0 +1,36 @@
+package persegipanjang;
+import java.util.Scanner;
+public class Main {
+        public static int luaspersegipanjang(int p,int l){
+        int luas= p * l;
+        return luas;  
+}   
+        public static int kelilingpersegipanjang(int p,int l){
+        int keliling= (2 * p) + (2 * l);
+        return keliling;  
+}
+        public static void outputl(int p, int l){
+        System.out.println("Luas = p × l");
+        System.out.println("Luas = "+p+" × "+l);
+        System.out.println("Luas = "+luaspersegipanjang(l,p));
+}    
+        public static void outputk(int p, int l){
+        System.out.println("Keliling = (2 × p) + (2 × l)");
+        System.out.println("Keliling = (2 × "+p+") + (2 × "+l+")");
+        System.out.println("Keliling = "+ kelilingpersegipanjang(p,l));   
+}   
+     
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int l,p;
+        System.out.print("Masukkan panjang persegi : ");
+        p=sc.nextInt();
+        System.out.print("Masukkan lebar persegi : ");
+        l=sc.nextInt();
+        System.out.println("°°=================°°");
+        outputl(p,l);
+        System.out.println("°°=================°°");
+        outputk(p,l);
+    }
+    
+}
