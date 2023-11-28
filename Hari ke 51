@@ -1,0 +1,24 @@
+package method_prosedur;
+import java.util.Scanner;
+public class Main {
+      public static int pangkatbilangan(int bilangan,int pangkat){
+       int hasil=bilangan;
+          for(int i=1; i<pangkat;i++){
+              hasil*=bilangan;
+          } 
+          return hasil;
+      } 
+      public static void output(int bilangan,int pangkat){
+          System.out.print(bilangan+" pangkat "+pangkat+" = ");
+          System.out.println(pangkatbilangan(bilangan,pangkat));
+      }
+      public static void main(String[] args) {
+        Scanner fal=new Scanner(System.in);
+        System.out.print("Masukkan bilangan :");
+        int bilangan=fal.nextInt();
+        System.out.print("Masukkan nilai pangkat :");
+        int pangkat=fal.nextInt();
+        output(bilangan,pangkat); 
+    }
+    
+}
