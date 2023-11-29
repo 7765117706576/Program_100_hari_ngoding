@@ -1,0 +1,39 @@
+package array7;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner fal=new Scanner(System.in);
+      System.out.print("Masukkan jumlah Mahasiswa : ");
+        int jml=fal.nextInt();
+        int nilai[]=new int[jml];
+        fal.nextLine();
+        String nama[]= new String[jml];
+        for (int i = 0; i < jml ;i++){
+            System.out.print((i+1)+". Masukkan Nama Mahasiswa "+" :" );
+            nama[i]=fal.nextLine();
+        }
+        
+        for (int i=0; i<jml;i++){
+            System.out.print("Nilai "+nama[i]+" : ");
+            nilai[i]=fal.nextInt();
+            if(nilai[i]>100){
+                System.out.println(nama[i]+" = Nilai tak masuk akal");
+                
+            }
+            
+        }
+        System.out.println("================");
+        for (int i = 0; i<jml;i++){
+            if (nilai[i]>100){
+                System.out.println(nama[i]+" Nilainya tak masuk akal");
+                
+            }else{
+            System.out.print(nama[i]+" Nilainya : "+nilai[i]);
+            System.out.println(" ");
+            }      
+        }
+        
+    }
+    
+}
