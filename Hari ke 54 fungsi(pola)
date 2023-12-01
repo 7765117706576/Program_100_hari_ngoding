@@ -2,19 +2,24 @@ package pola_fungsi;
 import java.util.Scanner;
 public class Main {
     
-    public static void main(String[] args){ 
-        Scanner sc=new Scanner(System.in);
-        System.out.println("Masukkan tinggi persegi : ");
-        int tinggi = sc.nextInt();
-        
-    }
-
-    public static void buatPolaPersegi(int tinggi) {
+        static void PolaPersegi(int tinggi) {
         for (int i = 0; i < tinggi; i++) {
             for (int j = 0; j < tinggi; j++) {
                 System.out.print("o ");
             }
             System.out.println();
         }
+    }
+
+    public static void main(String[] args) {
+        Scanner sc = new Scanner(System.in);
+
+        System.out.print("Masukkan tinggi persegi : ");
+        int panjangSisi = sc.nextInt();
+
+        
+        PolaPersegi(panjangSisi);
+
+        sc.close();
     }
 }
