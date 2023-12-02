@@ -1,0 +1,25 @@
+package bilangan_ganjil;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int awal=1;
+        System.out.print("Masukkan batas deretan :");
+        int akhir=sc.nextInt();
+        if(akhir%2==0){
+            System.out.println("\nMasukkan batas deretan ganjil!!");
+            
+        }else{
+           System.out.print("\nDeretan : ");
+            for(int i=awal;awal<=akhir;awal+=2){
+                if(awal==akhir){
+                    System.out.print(awal+" ");   
+                
+                  }else{
+                    System.out.print(awal+",");  
+                  }
+               }
+            }
+        }
+    }
