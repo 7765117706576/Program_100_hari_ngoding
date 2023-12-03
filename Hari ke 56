@@ -1,0 +1,21 @@
+package pola_segitiga;
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc =new Scanner(System.in);
+        System.out.print("Masukkan tinggi segitiga : "); 
+        int tinggiSegitiga = sc.nextInt();
+
+        polaSegitiga(tinggiSegitiga);
+    }
+
+    static void polaSegitiga(int tinggi) {
+        for (int i = 1; i <= tinggi; i++) {
+            for (int j = 1; j <= i; j++) {
+                System.out.print("o ");
+            }
+            System.out.println();
+        }
+    }
+}
