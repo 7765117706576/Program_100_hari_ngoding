@@ -1,0 +1,23 @@
+package genapmethod;
+public class Main {
+    
+    public static void bio_array(){
+       String bio[][] = {
+           {"Nama  : ","Naufal"},
+           {"Kelas : ","B INFORMATIKA"},
+           {"NIM   : ","D0223325"}
+       };
+           for (int i=0; i<bio.length;i++){
+               for (int j=0;j<bio[i].length;j++){
+                   System.out.print(bio[i][j]);
+               }
+               System.out.println("");
+       }
+    }
+    public static void main(String[] args) {
+     bio_array();   
+        
+        
+        }
+    }
+
