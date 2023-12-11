@@ -1,0 +1,25 @@
+package genapmethod;
+public class Main {
+    
+    public static void nilai_array(){
+       int nilai[][] = {
+           {17,98},
+           {56,89},
+           {67,38}
+       };
+        System.out.println("indeksnya : ");
+           for (int i=0; i<nilai.length;i++){
+               for (int j=0;j<nilai[i].length;j++){
+                   System.out.print(nilai[i][j]+" ");
+               }
+               System.out.println("");
+           }
+    }
+    
+    public static void main(String[] args) {
+     nilai_array();   
+        
+        
+        }
+    }
+
