@@ -1,0 +1,24 @@
+package genapmethod;
+import java.util.Scanner;
+public class Main {
+    
+    public static void nilai(){
+     Scanner sc=new Scanner(System.in);  
+     System.out.print("Masukkkan nilai : ");
+     int nilai=sc.nextInt();
+        String predikat=
+            nilai > 100 ? "nilai tak masuk akal":
+            nilai >=90 ? "Nilai A":
+            nilai >=80 ? "Nilai B":
+            nilai >=70 ? "Nilai C":
+            nilai >=60 ? "Nilai D":
+            "Nilai eror";
+        System.out.println(predikat);
+    }             
+    public static void main(String[] args) {
+     nilai();   
+        
+        
+        }
+    }
+
