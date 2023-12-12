@@ -1,0 +1,30 @@
+package genapmethod;
+import java.util.Scanner;
+public class Main {
+    
+    public static void nilai(){
+     Scanner sc=new Scanner(System.in);  
+     System.out.print("Masukkkan nilai : ");
+     int nilai=sc.nextInt();
+        if(nilai>100){
+            System.out.println("Nilai di luar nurul");
+        }else if(nilai==100||89<nilai){
+            System.out.println("Nilai A");
+        }else if(nilai==89||79<nilai){
+            System.out.println("Nilai B");
+        }else if(nilai==79||69<nilai){
+            System.out.println("Nilai C");
+        }else if(nilai==69||59<nilai){
+            System.out.println("Nilai D");
+        }else if(nilai==59||nilai<60){
+            System.out.println("Nilai Eror");
+        }
+    }
+    
+    public static void main(String[] args) {
+     nilai();   
+        
+        
+        }
+    }
+
