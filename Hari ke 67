@@ -1,0 +1,22 @@
+package genapmethod;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    
+    public static void nilai(){
+     int nilai[]={1,2,3,4,5};
+     int jumlah=0;
+     int jml=nilai.length;  
+        for (int i=0;i<jml;i++){
+            jumlah+=nilai[i];
+        }        
+   System.out.println("Nilai = "+Arrays.toString(nilai)); 
+    System.out.println("Jumlah ="+jumlah);       
+    }             
+    public static void main(String[] args) {
+     nilai();   
+        
+        
+        }
+    }
+    
