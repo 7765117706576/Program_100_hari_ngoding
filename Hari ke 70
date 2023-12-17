@@ -1,0 +1,38 @@
+package genapmethod;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void search(){
+         Scanner sc=new Scanner(System.in);
+        String a[]={
+             "Apel",
+            "Anggur",
+            "Jeruk",
+            "Manggis"
+        };
+        int deteksi=0;
+        String cari;
+        for (int i=0; i<a.length;i++){
+            System.out.println(i+1+". "+a[i]);
+        }
+        System.out.println("---------------------");
+        System.out.println("Masukkan nama buah: ");
+        cari=sc.nextLine();
+        for (int i=0;i<a.length;i++){
+            if(cari.equalsIgnoreCase(a[i])){
+            System.out.println("Nomor "+(i+1));
+            deteksi++; 
+            }
+        }
+        if (deteksi==0){
+            System.out.println("Data tidak tersedia");
+
+        
+        
+        }
+    }
+    public static void main(String[] args){
+        search();
+    }
+    
+}
