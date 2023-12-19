@@ -1,0 +1,28 @@
+package genapmethod;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void search(){
+       Scanner sc=new Scanner (System.in);
+        System.out.print("Masukkan batas angka: ");
+        int angka=sc.nextInt();
+
+        int deretan=0;
+        for(int i =1; i<= angka; i += 2){
+            deretan+=i;
+
+
+            if(i<angka){
+                System.out.print(i+"+");
+
+            }else{
+                System.out.print(i+"=");
+            }
+        }
+        System.out.println(deretan);
+    }    
+    public static void main(String[] args){
+        search();
+    }
+    
+}
