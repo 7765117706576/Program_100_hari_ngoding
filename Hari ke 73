@@ -1,0 +1,28 @@
+package genapmethod;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void search(){
+  Scanner input= new Scanner(System.in);
+        int f1 = 0;
+        int f2 = 1;
+        System.out.print("Masukkan jumlah deretan yang bernilai: ");
+        int n =input.nextInt();
+
+        int fn;
+        System.out.println("Deretan fibonacci");
+        System.out.print(f1+", ");
+        System.out.print(f2);
+        for(int i= 1; i < n; i++){
+            fn=f2+f1;
+            System.out.print(", "+fn);
+            f1= f2;
+            f2= fn;
+
+        }
+        }   
+    public static void main(String[] args){
+        search();
+    }
+    
+}
