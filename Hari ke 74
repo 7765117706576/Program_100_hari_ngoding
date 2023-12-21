@@ -1,0 +1,26 @@
+package genapmethod;
+import java.util.Scanner;
+import java.util.Arrays;
+public class Main {
+    public static void search(){
+  Scanner input= new Scanner(System.in);
+  Scanner sc=new Scanner(System.in);
+        int awal,akhir;
+        System.out.print("Masukkan nilai awal: ");
+        awal=sc.nextInt();
+        System.out.print("Masukkan nilai akhir: ");
+        akhir=sc.nextInt();
+        int a= awal;
+        System.out.println("Hasil dari inputan nilai adalah: ");
+        do {
+            System.out.print(a+" ");
+            a++;
+
+        }while(a<=akhir);
+
+    }
+    public static void main(String[] args){
+        search();
+    }
+    
+}
