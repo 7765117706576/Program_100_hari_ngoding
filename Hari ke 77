@@ -1,0 +1,24 @@
+package testes;
+import java.util.Scanner;
+ class Main {
+    
+     public static void search() {
+       Scanner sc=new Scanner(System.in); 
+      System.out.print("Masukkan angka genap : ");
+        int a=sc.nextInt();
+         while(a%2==1){
+             System.out.println("Angka genap bang : ");
+             a=sc.nextInt();
+         }while(a%2==0){
+             System.out.println("Excellent:)");
+             break;
+         }
+        }
+       public static void main(String[] args) {
+         search(); 
+           
+           
+       }
+    
+    
+}
