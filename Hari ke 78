@@ -1,0 +1,52 @@
+package ngoding;
+import java.util.Scanner;
+public class Main {
+    
+    public static void search() {
+  Scanner sc=new Scanner (System.in);
+      System.out.print("Masukkan Jumlah Mahasiswa : ");
+      int jml=sc.nextInt();
+      System.out.println("\n");  
+      String n[]=new String[jml];
+      String a[]=new String[jml];
+      String f[]=new String[jml];
+      String p[]=new String[jml];
+      int ag[]  =new int[jml];
+      int detek=0;  
+      sc.nextLine(); 
+        for(int i=0; i<jml;i++){
+         System.out.print((i+1)+". Nama mahasiswa :");
+         n[i]=sc.nextLine();
+         System.out.print("   Alamat\t  :");  
+         a[i]=sc.nextLine();
+         System.out.print("   Fakultas\t  :");  
+         f[i]=sc.nextLine();
+         System.out.print("   Prodi\t  :");
+         p[i]=sc.nextLine();
+         System.out.print("   Tahun Angkatan :");
+         ag[i]=sc.nextInt();
+         sc.nextLine();   
+         System.out.println("=================================");  
+        }
+       System.out.println("Biodata Mahasiswa : \n");
+        for(int i=0;i<jml;i++){
+            System.out.println((i+1)+". Nama \t:"+n[i]);
+            System.out.println("   Alamat\t:"+a[i]);
+            System.out.println("   Fakultas\t:"+f[i]);
+            System.out.println("   Prodi\t:"+p[i]);
+            System.out.println("   Angkatan\t:"+ag[i]);
+            System.out.println("\n");
+            detek++;
+            if (detek==jml){
+                System.out.println("Jumlah Mahasiswa\t: "+jml);
+            sc.nextLine();    
+            }
+        }
+        }
+    public static void main (String[] args){
+        search();
+    }
+        
+        }
+    
+
