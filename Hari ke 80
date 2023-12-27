@@ -1,0 +1,13 @@
+
+public class Main {
+    
+    public static void main(String[] args) {
+        int a=10;
+        int b=15;
+        int c=Math.max(a,b);
+        System.out.println("Nilai tertinggi : "+c);
+        c=Math.min(a,b);
+        System.out.println("Nilai terendah : "+c);
+    }
+    
+}
