@@ -1,0 +1,21 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        double a=100;
+        double z=Math.sqrt(a);
+        System.out.println("Kuadrat dari 100 : "+z);
+        double b=25;
+        double f=Math.sqrt(b);
+        System.out.println("Kuadrat dari 25 : "+f);
+        double c=36;
+        double i=Math.sqrt(c);
+        System.out.println("Kuadrat dari 36 : "+i);
+        double d=9;
+        double j=Math.sqrt(d);
+        System.out.println("Kuadrat dari 9 : "+j);
+        
+        
+        }
+    
+}
