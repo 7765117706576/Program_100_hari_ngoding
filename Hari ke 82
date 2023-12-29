@@ -1,0 +1,13 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        double a=10;
+        double pangkat=3;
+        double z=Math.pow(a,pangkat);
+        System.out.println(z);
+        
+        
+        }
+    
+}
