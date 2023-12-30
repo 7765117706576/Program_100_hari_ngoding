@@ -1,0 +1,16 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Masukkan angka : ");
+        double a=sc.nextDouble();
+        System.out.print("Pangkat : ");
+        double pangkat=sc.nextDouble();
+        double z=Math.pow(a,pangkat);
+        System.out.println(z);
+        
+        
+        }
+    
+}
