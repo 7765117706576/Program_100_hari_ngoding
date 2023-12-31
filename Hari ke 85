@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a[]={12,34,76,98,23,45,99};
+        double maks=0;
+        double mini=0;
+        
+        for(int i=0;i<a.length;i++){
+            maks=Math.max(maks, a[i]);
+            
+        }
+        
+        System.out.println(maks);
+        }
+    
+}
