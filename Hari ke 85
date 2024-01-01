@@ -1,0 +1,27 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a[]={12,34,76,98,23,45,99};
+        double maks=0;
+        double mini=0;
+        System.out.print("[  ");
+        for(int k=0;k<a.length;k++){
+            
+            System.out.print(a[k]+" ");
+        }
+        System.out.println("]");
+        
+        for(int i=0;i<a.length;i++){
+            maks=Math.max(maks, a[i]);
+            mini+=maks;
+            
+        }for(int j=0;j<a.length;j++){
+            mini=Math.min(mini,a[j]);
+        }
+        System.out.println("Nilai maksimalnya :"+maks);
+        System.out.println("Nilai minimunnya :"+mini);
+        }
+    
+}
