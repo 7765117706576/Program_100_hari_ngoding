@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a = 7.6;
+        double b = 8.9;
+        double c = 5.6;
+        double d = (Math.floor(a));
+        double e = (Math.floor(b));
+        double f = (Math.floor(c));
+            
+        System.out.println("Bilangan pertama : "+a+" Hasil bulat = "+d);   
+        System.out.println("Bilangan kedua : "+b+" Hasil bulat = "+e);
+        System.out.println("Bilangan ketiga : "+c+" Hasil bulat = "+f);    
+    }
+    
+}
