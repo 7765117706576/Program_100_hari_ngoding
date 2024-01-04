@@ -1,0 +1,18 @@
+import java.util.Scanner;
+public class Main {
+    
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        double a = 27;
+        double b = 125;
+        double c = 1000;
+        double d = (Math.cbrt(a));
+        double e = (Math.cbrt(b));
+        double f = (Math.cbrt(c));
+            
+        System.out.println(a+" Merupakan hasil dari "+d+" yang dikalikan sebanyak 3 kali");   
+        System.out.println(b+" Merupakan hasil dari "+e+" yang dikalikan sebanyak 3 kali");
+        System.out.println(c+" Merupakan hasil dari "+f+" yang dikalikan sebanyak 3 kali");    
+    }
+    
+}
