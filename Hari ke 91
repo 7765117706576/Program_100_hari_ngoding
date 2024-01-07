@@ -1,0 +1,31 @@
+import java.util.Scanner;
+public class Main {
+     
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        int x,y,z;
+        String u;
+        do{
+        System.out.print("Masukkan Nilai x = ");
+        x=sc.nextInt();
+        System.out.print("Masukkan Nilai y = ");
+        y=sc.nextInt();
+        System.out.println("===================");
+        try{
+            z=x/y;
+            System.out.println("Hasilnya : "+z);
+        }catch(Exception e){
+            System.out.println("Tak dapat di bagi");
+            System.out.println("Error : ");
+            e.printStackTrace();
+            System.out.println("=====================");
+        }
+        
+        System.out.print("Ingin coba lagi [y/n] :" );
+        u=sc.next();
+    }while(u.equalsIgnoreCase("y"));
+    System.out.println("Program selesai");
+    
+}
+    
+}
