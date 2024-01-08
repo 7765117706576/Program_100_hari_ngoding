@@ -1,0 +1,29 @@
+import java.util.Scanner;
+public class Main {
+     
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String n,d;
+        int b,c;
+        do{
+        System.out.print("Masukkan Nama: ");
+        n=sc.next();
+        System.out.println("Nama\t\t : "+n);
+        System.out.println("Jumlah Char\t : "+n.length());
+        System.out.println("UpperCase\t : "+n.toUpperCase());
+        System.out.println("LowerCase\t : "+n.toLowerCase());
+        b=n.length()-1;
+        System.out.println("Masukkan angka indeks di mulai dari 0 dan batasnya pada "+b);
+        System.out.print("Indeks ke : ");
+        c=sc.nextInt();
+        System.out.println("Hurufnya : "+n.charAt(c));
+            
+        
+        System.out.print("Anda ingin mengulanginya ? [y/n] : ");
+        d=sc.next();  
+            
+        }while(d.equalsIgnoreCase("y"));
+        System.out.println("Program selesai ");
+}
+    
+}
