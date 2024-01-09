@@ -1,0 +1,14 @@
+
+public class Main {
+     
+    public static void main(String[] args) {
+        String n;
+        n="Muhammad Naufal.N";
+        String[] s =n.split(" ");
+        System.out.println("Nama: "+n);
+        System.out.println("Nama depan : "+s[0]);
+        System.out.println("Nama belakang : "+s[1]);
+        System.out.println("Jumlah kata : "+s.length);
+    }
+    
+}
