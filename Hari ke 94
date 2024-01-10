@@ -1,0 +1,30 @@
+import java.util.Scanner;
+public class Main {
+     
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        System.out.print("Ada 2 Method Math\n1. Math (pow)\n2. Math (cbrt) \nMasukkan pilihan : ");
+        int pil=sc.nextInt();
+        switch(pil){
+            case 1:
+            System.out.println("Anda memilih math pow,yaitu angka yang berpangkat.");
+            System.out.print("Masukkan angka: ");
+            int a=sc.nextInt();
+            System.out.print("Masukkan pangkat: ");
+            int p=sc.nextInt();
+            double j=Math.pow(a, p);
+            System.out.println("Hasilnya :"+j);
+            break;
+            case 2:
+            System.out.println("Anda memilih math cbrt,pengembalian perkalian sebanyak 3 kali.");
+            System.out.print("Masukkan angka : ");
+            double b=sc.nextInt();
+            double z=Math.cbrt(b);
+            System.out.println("Hasil :"+z);
+            break;
+            
+            
+        }
+    }
+    
+}
