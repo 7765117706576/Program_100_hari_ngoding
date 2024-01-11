@@ -1,0 +1,19 @@
+import java.util.Scanner;
+public class Main {
+     
+    public static void main(String[] args) {
+        Scanner sc=new Scanner(System.in);
+        String ttl,tmpt,thn,tgl;
+        System.out.print("Masukkan sesuai format (tempat lahir, tanggal lahir tahun lahir)\n :"); 
+        ttl =sc.nextLine();
+        String [] split1=ttl.split(", ");
+        String [] split2=split1[1].split(" ");
+        tmpt =split1[0];
+        tgl  =split2[0];
+        thn  =split2[1];
+        System.out.println("Tempat : "+tmpt);
+        System.out.println("Tanggal : "+tgl);
+        System.out.println("Tahun : "+thn);
+        }
+    
+}
