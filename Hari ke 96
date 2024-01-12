@@ -1,0 +1,14 @@
+
+class objek{
+  int x=10;  
+}
+public class Main {
+     
+    public static void main(String[] args) {
+        objek obj=new objek();
+        System.out.println("Isi class: "+obj.x);
+        
+        
+        }
+    
+}
