@@ -1,0 +1,20 @@
+
+class objek{
+  int x=10;
+  int a=10;
+  int c=10;    
+  int z=x+=5;
+  int y=a*=5;
+  int v=c/2;    
+}
+public class Main {
+     
+    public static void main(String[] args) {
+        objek obj=new objek();
+        System.out.println("Isi class: "+"\n10+5="+obj.z);
+        System.out.println("10×5="+obj.y);
+        System.out.println("10:2="+obj.v);
+        
+        }
+    
+}
