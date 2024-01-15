@@ -1,0 +1,10 @@
+import java.lang.StringBuilder;
+class HelloWorld {
+    public static void main(String[] args) {
+   StringBuilder build=new StringBuilder("Halo");
+   System.out.println("data = "+build);
+   System.out.println("panjang = "+build.length());
+   System.out.println("Kapasitas = "+build.capacity());
+        
+    }
+}
